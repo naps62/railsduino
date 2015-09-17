@@ -1,0 +1,68 @@
+//  _ ___ _______     ___ ___ ___  ___ _   _ ___ _____ ___ 
+// / |_  )__ /   \   / __|_ _| _ \/ __| | | |_ _|_   _/ __| 
+// | |/ / |_ \ |) | | (__ | ||   / (__| |_| || |  | | \__ \ 
+// |_/___|___/___/   \___|___|_|_\\___|\___/|___| |_| |___/ 
+// 
+// Railsuino
+// 
+// Made by Ana Isabel Pedregal
+// License: CC-BY-SA 3.0
+// Downloaded from: https://123d.circuits.io/circuits/1027005-railsuino
+
+// Pin 7,6,5 has an LED connected on most Arduino boards.
+// give it a name:
+int green = 7;
+int yellow = 6;
+int red = 5;
+
+void led_state(char led){
+  
+  if(Serial.read()=='L'){
+    digitalWrite(led, LOW);
+  }  
+  else{
+    digitalWrite(led, HIGH);
+  }
+
+}
+
+// the setup routine runs once when you press reset:
+void setup() {
+  // initialize the digital pin as an output.
+  pinMode(green, OUTPUT);
+  pinMode(yellow, OUTPUT);
+  pinMode(red, OUTPUT);
+  
+  // initalize the serial connection
+  Serial.begin(9600);
+  
+  
+}
+
+// the loop routine runs over and over again forever:
+void loop() {
+  
+  if(Serial.available()>0){
+  
+    switch(Serial.read()){
+     
+      case 'G':
+        led_state(green);     
+      
+      break;
+      
+      case 'Y':
+      	led_state(yellow); 
+      break;
+      
+      case 'R':
+      	led_state(red); 
+      break;
+    
+    
+    }
+  
+  }
+  
+}
+
