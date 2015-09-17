@@ -1,0 +1,64 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ .hide{
+  display: none;
+ }
+
+.led-container{
+  width: 100%;
+  height: 230px;
+  background-color: #E6E6E6;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.led{
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+.green-led-on{
+  background-color: #4DFF4D;
+  box-sizing: border-box;
+}
+
+.green-led-off{
+  background-color: #36B236;
+}
+
+.yellow-led-on{
+  background-color: #FFFF4D;
+}
+
+.yellow-led-off{
+  background-color: #E6E600;
+}
+.red-led-on{
+  background-color: #FF3333;
+}
+
+.red-led-off{
+  background-color: #CC0000;
+}
+
+
+

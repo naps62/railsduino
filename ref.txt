@@ -1,0 +1,93 @@
+$ rails new app
+$ subl app
+$ cd app
+
+/config/routes.rb
+	root to: 'home#index'
+
+/app/controllerds
+	new file home_controller 
+		class HomeController < ApplicationController
+		  def index
+		  end
+		end
+/views
+	new folder home
+
+/views/home
+	new file index.erb
+	copy html code to assemple index page
+
+/assets/stylesheets
+	copy css code to application.css to give style to html elements
+
+/assets/javascripts
+	copy js code to appication.js to give behavior to the html elements
+	
+/Gemfile
+	add "gem 'serialport'"
+$ bundle install
+
+/app/controllers
+	new file serial_controller.rb to manage serial port requests
+
+/config/routes.rb
+	add routes for each ajax to serial request
+		 post '/green_on', to: 'serial#green_on' 
+		 post '/green_off', to: 'serial#green_off' 
+		 post '/yellow_on', to: 'serial#yellow_on' 
+		 post '/yellow_off', to: 'serial#yellow_off' 
+		 post '/red_on', to: 'serial#red_on'
+		 post '/red_off', to: 'serial#red_off'  
+/app/controllers/serial_controller.rb
+	add controller methods to attend to the ajax requests by sending specific serial message
+		 def green_on
+		    @port.write "GH\n"    
+		  end
+
+		  def green_off
+		    @port.write "GL\n"    
+		  end
+
+		  def yellow_on
+		    @port.write "YH\n"    
+		  end
+
+		  def yellow_off
+		    @port.write "YL\n"    
+		  end
+
+		  def red_on
+		    @port.write "RH\n"    
+		  end
+
+		  def red_off
+		    @port.write "RL\n"    
+		  end
+
+
+
+
+		
+	
+
+
+______________
+http://flexboxin5.com/
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+http://fritzing.org/home/
+http://workshopweekend.net/arduino/labs/exploring-signals
+https://github.com/provideyourown/CodeBlocks-Arduino/
+https://123d.circuits.io/lab
+http://ruby-serialport.rubyforge.org/
+http://www.armadeus.com/wiki/index.php?title=GTKTerm
+http://stackoverflow.com/questions/6356565/reading-from-a-serial-port-with-ruby
+http://askubuntu.com/questions/588800/setup-virtual-serial-ports-linux-null-modem-emulator-using-tty0tty
+http://www.xappsoftware.com/wordpress/2013/10/07/using-virtual-serial-ports-on-linux-ubuntu/
+http://www.dest-unreach.org/socat/doc/socat.html
+http://linux.die.net/man/1/socat
+http://stackoverflow.com/questions/1570280/writing-byte-arrays-to-serial-with-ruby
+http://www.rubydoc.info/gems/ruby-serialport/0.7.0/file/README
+
+
+

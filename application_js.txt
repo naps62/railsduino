@@ -1,0 +1,70 @@
+﻿application.js
+
+$(document).ready(function(){
+
+  $(".green.led").on("mouseenter",function(){
+
+     $(".green-led-on").removeClass("hide");
+     $(".green-led-off").addClass("hide");
+
+     $.ajax({
+      type: "POST",
+      url:"/green_on"
+     });
+  });
+
+  $(".green.led").on("mouseleave",function(){
+
+       $(".green-led-off").removeClass("hide");
+       $(".green-led-on").addClass("hide");
+
+      $.ajax({
+        type: "PUT",
+        url:"/green_off"
+       });
+    });
+
+  $(".yellow.led").on("mouseenter",function(){
+
+     $(".yellow-led-on").removeClass("hide");
+     $(".yellow-led-off").addClass("hide");
+
+     $.ajax({
+      type: "PUT",
+      url:"/yellow_on"
+     });
+  });
+
+  $(".yellow.led").on("mouseleave",function(){
+
+       $(".yellow-led-off").removeClass("hide");
+       $(".yellow-led-on").addClass("hide");
+
+      $.ajax({
+        type: "PUT",
+        url:"/yellow_off"
+       });
+    });
+
+  $(".red.led").on("mouseenter",function(){
+
+     $(".red-led-on").removeClass("hide");
+     $(".red-led-off").addClass("hide");
+
+     $.ajax({
+      type: "PUT",
+      url:"/red_on"
+     });
+  });
+
+  $(".red.led").on("mouseleave",function(){
+
+       $(".red-led-off").removeClass("hide");
+       $(".red-led-on").addClass("hide");
+
+      $.ajax({
+        type: "PUT",
+        url:"/red_off"
+       });
+    });
+});
