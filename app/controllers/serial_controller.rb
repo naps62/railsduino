@@ -1,10 +1,11 @@
 class SerialController < ApplicationController
-  def init
-    @port = self.serial_port_config("/dev/tnt0")
-  end
+  # def init
+  #   @port = self.serial_port_config("/dev/pts/12")
+  # end
 
-  def green_on
-    @port.write "GH\n"    
+  def green_on    
+    sp = SerialPort.open("/dev/pts/12") {|sp| sp.write "GH\n" }
+    binding.pry    
   end
 
   def green_off
@@ -30,7 +31,6 @@ class SerialController < ApplicationController
   private
   
   def serial_port_config(port)
-    binding.pry
     parameters = {"baud" => 9600,
                   "data_bits" => 8,
                   "stop_bits" => 1,
