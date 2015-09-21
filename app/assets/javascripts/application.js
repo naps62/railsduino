@@ -17,15 +17,26 @@
 
 $(document).ready(function(){
 
+  $.ajax({
+    type: "PUT",
+    url:"/init",
+    dataType: "json",
+    success: function(data){
+        console.log(data);}
+  });
+
   $(".green.led").on("mouseenter",function(){
 
      $(".green-led-on").removeClass("hide");
      $(".green-led-off").addClass("hide");
 
      $.ajax({
-      type: "POST",
-      url:"/green_on"
-     });
+      type: "PUT",
+      url:"/green_on",
+      dataType: "json",
+      success: function(data){
+          console.log(data);}
+       });
   });
 
   $(".green.led").on("mouseleave",function(){
@@ -34,9 +45,12 @@ $(document).ready(function(){
        $(".green-led-on").addClass("hide");
 
        $.ajax({
-        type: "POST",
-        url:"/green_off"
-       });
+        type: "PUT",
+        url:"/green_off",
+        dataType: "json",
+        success: function(data){
+            console.log(data);}
+           });
     });
 
 
@@ -46,9 +60,12 @@ $(document).ready(function(){
      $(".yellow-led-off").addClass("hide");
 
      $.ajax({
-      type: "POST",
-      url:"/yellow_on"
-     });
+      type: "PUT",
+      url:"/yellow_on",
+      dataType: "json",
+      success: function(data){
+          console.log(data);}
+       });
   });
 
   $(".yellow.led").on("mouseleave",function(){
@@ -57,9 +74,12 @@ $(document).ready(function(){
        $(".yellow-led-on").addClass("hide");
 
        $.ajax({
-        type: "POST",
-        url:"/yellow_off"
-       });
+        type: "PUT",
+        url:"/yellow_off",
+        dataType: "json",
+        success: function(data){
+            console.log(data);}
+           });
     });
 
   $(".red.led").on("mouseenter",function(){
@@ -68,9 +88,12 @@ $(document).ready(function(){
      $(".red-led-off").addClass("hide");
 
      $.ajax({
-      type: "POST",
-      url:"/red_on"
-     });
+      type: "PUT",
+      url:"/red_on",
+      dataType: "json",
+      success: function(data){
+          console.log(data);}
+       });
   });
 
   $(".red.led").on("mouseleave",function(){
@@ -79,8 +102,11 @@ $(document).ready(function(){
        $(".red-led-on").addClass("hide");
 
        $.ajax({
-        type: "P",
-        url:"/red_off"
-       });
+        type: "PUT",
+        url:"/red_off",
+        dataType: "json",
+        success: function(data){
+            console.log(data);}
+         });
     });
 });

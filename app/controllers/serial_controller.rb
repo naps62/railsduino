@@ -1,31 +1,47 @@
 class SerialController < ApplicationController
-  # def init
+  def init
+    #binding.pry
+    state = "init"
+    render json: {state: state}
   #   @port = self.serial_port_config("/dev/pts/12")
-  # end
+  end
 
-  def green_on    
-    sp = SerialPort.open("/dev/pts/12") {|sp| sp.write "GH\n" }
-    binding.pry    
+  def green_on 
+    #binding.pry    
+    state = "green_on"
+    render json: {state: state}
+    # sp = SerialPort.open("/dev/pts/12") {|sp| sp.write "GH\n" }
+    #binding.pry    
   end
 
   def green_off
-    @port.write "GL\n"    
+    #binding.pry 
+    render json: {state: "green_off"}
+    #@port.write "GL\n"    
   end
 
   def yellow_on
-    @port.write "YH\n"    
+    #binding.pry 
+    render json: {state: "yellow_on"}
+    #@port.write "YH\n"    
   end
 
   def yellow_off
-    @port.write "YL\n"    
+    #binding.pry 
+    render json: {state: "yellow_off"}
+    #@port.write "YL\n"    
   end
 
   def red_on
-    @port.write "RH\n"    
+    #binding.pry 
+    render json: {state: "red_on"}
+    #@port.write "RH\n"    
   end
 
   def red_off
-    @port.write "RL\n"    
+    #binding.pry 
+    render json: {state: "red_off"}
+    #@port.write "RL\n"    
   end
 
   private
