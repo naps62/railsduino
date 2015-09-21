@@ -83,6 +83,7 @@ https://123d.circuits.io/lab
 http://ruby-serialport.rubyforge.org/
 http://www.armadeus.com/wiki/index.php?title=GTKTerm
 http://stackoverflow.com/questions/6356565/reading-from-a-serial-port-with-ruby
+http://stackoverflow.com/questions/21738958/ruby-serialport-is-only-sending-data-when-a-serial-monitor-is-open-or-when-irb
 http://askubuntu.com/questions/588800/setup-virtual-serial-ports-linux-null-modem-emulator-using-tty0tty
 http://www.xappsoftware.com/wordpress/2013/10/07/using-virtual-serial-ports-on-linux-ubuntu/
 http://www.dest-unreach.org/socat/doc/socat.html
@@ -98,6 +99,13 @@ http://stackoverflow.com/questions/8054652/virtual-socat-serial-port-and-c-sharp
 http://unix.stackexchange.com/questions/117037/how-to-send-data-to-a-serial-port-and-see-any-answer
 https://help.ubuntu.com/community/Minicom
 http://www.cyberciti.biz/tips/connect-soekris-single-board-computer-using-minicom.html
+https://www.agileplannerapp.com/blog/building-agile-planner/rails-background-jobs-in-threads
+https://ninefold.com/blog/2014/11/25/threads/
+https://ryanboland.com/blog/writing-your-first-background-worker/
+https://github.com/mperham/sidekiq/wiki
+http://www.rubydoc.info/github/mperham/sidekiq/Sidekiq
+http://railscasts.com/episodes/366-sidekiq
+http://www.tutorialspoint.com/ruby/ruby_multithreading.htm
 
 
 

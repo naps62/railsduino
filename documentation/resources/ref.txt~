@@ -65,8 +65,9 @@ $ bundle install
 		    @port.write "RL\n"    
 		  end
 
-
-
+________________________________________________________
+sudo apt-get install socat
+socat -d -d pty,raw,echo=0 pty,raw,echo=0
 
 		
 	
@@ -88,6 +89,21 @@ http://www.dest-unreach.org/socat/doc/socat.html
 http://linux.die.net/man/1/socat
 http://stackoverflow.com/questions/1570280/writing-byte-arrays-to-serial-with-ruby
 http://www.rubydoc.info/gems/ruby-serialport/0.7.0/file/README
+https://help.ubuntu.com/community/Minicom
+http://www.pendrivelinux.com/how-to-open-a-tar-file-in-unix-or-linux/
+https://justcheckingonall.wordpress.com/2009/06/09/howto-vsp-socat/
+https://help.ubuntu.com/community/VirtualSerialPort
+https://www.linux.com/news/software/developer/17942-socat-the-general-bidirectional-pipe-handler
+http://stackoverflow.com/questions/8054652/virtual-socat-serial-port-and-c-sharp-on-ubuntu-linux
+http://unix.stackexchange.com/questions/117037/how-to-send-data-to-a-serial-port-and-see-any-answer
+https://help.ubuntu.com/community/Minicom
+http://www.cyberciti.biz/tips/connect-soekris-single-board-computer-using-minicom.html
+https://www.agileplannerapp.com/blog/building-agile-planner/rails-background-jobs-in-threads
+https://ninefold.com/blog/2014/11/25/threads/
+https://ryanboland.com/blog/writing-your-first-background-worker/
+https://github.com/mperham/sidekiq/wiki
+http://www.rubydoc.info/github/mperham/sidekiq/Sidekiq
+http://railscasts.com/episodes/366-sidekiq
 
 
 

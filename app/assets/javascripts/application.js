@@ -17,13 +17,13 @@
 
 $(document).ready(function(){
 
-  $.ajax({
-    type: "PUT",
-    url:"/init",
-    dataType: "json",
-    success: function(data){
-        console.log(data);}
-  });
+  // $.ajax({
+  //   type: "PUT",
+  //   url:"/init",
+  //   dataType: "json",
+  //   success: function(data){
+  //       console.log(data);}
+  // });
 
   $(".green.led").on("mouseenter",function(){
 

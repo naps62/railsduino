@@ -1,56 +1,46 @@
 class SerialController < ApplicationController
-  def init
-    #binding.pry
-    state = "init"
-    render json: {state: state}
-  #   @port = self.serial_port_config("/dev/pts/12")
-  end
+  # def init
+  #   state = "init"
+  #   render json: {state: state}
+  # end
 
-  def green_on 
-    #binding.pry    
-    state = "green_on"
-    render json: {state: state}
-    # sp = SerialPort.open("/dev/pts/12") {|sp| sp.write "GH\n" }
-    #binding.pry    
+  def green_on   
+    SerialPort.open("/dev/pts/12") {|sp| sp.write "GH\n" }
+    render json: {state: "green_on"}  
   end
 
   def green_off
-    #binding.pry 
-    render json: {state: "green_off"}
-    #@port.write "GL\n"    
+    SerialPort.open("/dev/pts/12") {|sp| sp.write "GL\n" }
+    render json: {state: "green_off"}   
   end
 
   def yellow_on
-    #binding.pry 
-    render json: {state: "yellow_on"}
-    #@port.write "YH\n"    
+    SerialPort.open("/dev/pts/12") {|sp| sp.write "YH\n" }
+    render json: {state: "yellow_on"}    
   end
 
   def yellow_off
-    #binding.pry 
-    render json: {state: "yellow_off"}
-    #@port.write "YL\n"    
+    SerialPort.open("/dev/pts/12") {|sp| sp.write "YL\n" }
+    render json: {state: "yellow_off"}      
   end
 
   def red_on
-    #binding.pry 
-    render json: {state: "red_on"}
-    #@port.write "RH\n"    
+    SerialPort.open("/dev/pts/12") {|sp| sp.write "RH\n" }
+    render json: {state: "red_on"}     
   end
 
   def red_off
-    #binding.pry 
-    render json: {state: "red_off"}
-    #@port.write "RL\n"    
+    SerialPort.open("/dev/pts/12") {|sp| sp.write "RL\n" }
+    render json: {state: "red_on"}      
   end
 
-  private
+  # private
   
-  def serial_port_config(port)
-    parameters = {"baud" => 9600,
-                  "data_bits" => 8,
-                  "stop_bits" => 1,
-                  "parity" => SerialPort::None} 
-    sp = SerialPort.new(port,parameters) 
-  end
+  # def serial_port_config(port)
+  #   parameters = {"baud" => 9600,
+  #                 "data_bits" => 8,
+  #                 "stop_bits" => 1,
+  #                 "parity" => SerialPort::None} 
+  #   sp = SerialPort.new(port,parameters) 
+  # end
 end
