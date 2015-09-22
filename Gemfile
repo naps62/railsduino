@@ -44,4 +44,5 @@ group :development, :test do
 end
 
 gem 'serialport'
+gem 'json'
 gem 'pry'

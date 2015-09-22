@@ -77,10 +77,19 @@ ______________
 http://flexboxin5.com/
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 http://fritzing.org/home/
+
 http://workshopweekend.net/arduino/labs/exploring-signals
 https://github.com/provideyourown/CodeBlocks-Arduino/
 https://123d.circuits.io/lab
 http://ruby-serialport.rubyforge.org/
+http://www.rubydoc.info/gems/serialport/SerialPort
+http://stackoverflow.com/questions/1570280/writing-byte-arrays-to-serial-with-ruby
+http://www.rubydoc.info/gems/ruby-serialport/0.7.0/file/README
+http://docs.tibbo.com/taiko/index.html?ser_uart_mode.htm
+
+https://robots.thoughtbot.com/io-in-ruby
+http://www.rubydoc.info/stdlib/core/IO
+
 http://www.armadeus.com/wiki/index.php?title=GTKTerm
 http://stackoverflow.com/questions/6356565/reading-from-a-serial-port-with-ruby
 http://stackoverflow.com/questions/21738958/ruby-serialport-is-only-sending-data-when-a-serial-monitor-is-open-or-when-irb
@@ -88,8 +97,6 @@ http://askubuntu.com/questions/588800/setup-virtual-serial-ports-linux-null-mode
 http://www.xappsoftware.com/wordpress/2013/10/07/using-virtual-serial-ports-on-linux-ubuntu/
 http://www.dest-unreach.org/socat/doc/socat.html
 http://linux.die.net/man/1/socat
-http://stackoverflow.com/questions/1570280/writing-byte-arrays-to-serial-with-ruby
-http://www.rubydoc.info/gems/ruby-serialport/0.7.0/file/README
 https://help.ubuntu.com/community/Minicom
 http://www.pendrivelinux.com/how-to-open-a-tar-file-in-unix-or-linux/
 https://justcheckingonall.wordpress.com/2009/06/09/howto-vsp-socat/
@@ -97,8 +104,8 @@ https://help.ubuntu.com/community/VirtualSerialPort
 https://www.linux.com/news/software/developer/17942-socat-the-general-bidirectional-pipe-handler
 http://stackoverflow.com/questions/8054652/virtual-socat-serial-port-and-c-sharp-on-ubuntu-linux
 http://unix.stackexchange.com/questions/117037/how-to-send-data-to-a-serial-port-and-see-any-answer
-https://help.ubuntu.com/community/Minicom
 http://www.cyberciti.biz/tips/connect-soekris-single-board-computer-using-minicom.html
+
 https://www.agileplannerapp.com/blog/building-agile-planner/rails-background-jobs-in-threads
 https://ninefold.com/blog/2014/11/25/threads/
 https://ryanboland.com/blog/writing-your-first-background-worker/
@@ -106,6 +113,33 @@ https://github.com/mperham/sidekiq/wiki
 http://www.rubydoc.info/github/mperham/sidekiq/Sidekiq
 http://railscasts.com/episodes/366-sidekiq
 http://www.tutorialspoint.com/ruby/ruby_multithreading.htm
+http://www.sitepoint.com/comparing-ruby-background-processing-libraries-delayed-job/
+http://www.brownfort.com/2014/09/inter-thread-communication-in-ruby/
+http://ruby-doc.org/stdlib-1.9.3/libdoc/thread/rdoc/Queue.html
+
+http://stackoverflow.com/questions/8234730/global-data-in-application-controller-rails-3-1
+http://stackoverflow.com/questions/23328350/where-to-place-a-global-variable-in-rails-inside-nav
+https://www.ruby-forum.com/topic/52689
+http://ruby-doc.org/stdlib-1.9.3/libdoc/drb/rdoc/DRb.html
+https://github.com/railsware/global
+
+https://hackhands.com/ruby-read-json-file-hash/
+http://mike.bailey.net.au/2011/02/json-with-ruby-and-rails/
+http://simonecarletti.com/blog/2010/04/inside-ruby-on-rails-serializing-ruby-objects-with-json/
+http://api.rubyonrails.org/classes/ActiveSupport/JSON.html
+http://stackoverflow.com/questions/11149430/how-to-serve-a-static-json-file-in-rails
+https://blog.engineyard.com/2015/active-model-serializers
+http://stackoverflow.com/questions/15270522/active-record-and-file-how-do-i-write-json-file-with-my-data
+https://rubymonk.com/learning/books/1-ruby-primer/chapters/42-introduction-to-i-o/lessons/90-using-the-file-class
+http://ruby-doc.org/core-2.2.2/File.html
+http://ruby-doc.org/core-2.2.2/IO.html
+http://www.gotealeaf.com/books/ruby/read/files
+https://www.ruby-forum.com/topic/104708
+
+http://devblog.avdi.org/2014/04/28/rake-part-6-clean-and-clobber/
+
+
+
 
 
 
