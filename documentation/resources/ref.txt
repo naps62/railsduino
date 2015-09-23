@@ -116,6 +116,8 @@ http://www.tutorialspoint.com/ruby/ruby_multithreading.htm
 http://www.sitepoint.com/comparing-ruby-background-processing-libraries-delayed-job/
 http://www.brownfort.com/2014/09/inter-thread-communication-in-ruby/
 http://ruby-doc.org/stdlib-1.9.3/libdoc/thread/rdoc/Queue.html
+https://github.com/mperham/sidekiq/wiki/Using-Redis
+
 
 http://stackoverflow.com/questions/8234730/global-data-in-application-controller-rails-3-1
 http://stackoverflow.com/questions/23328350/where-to-place-a-global-variable-in-rails-inside-nav

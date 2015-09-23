@@ -116,6 +116,7 @@ http://www.tutorialspoint.com/ruby/ruby_multithreading.htm
 http://www.sitepoint.com/comparing-ruby-background-processing-libraries-delayed-job/
 http://www.brownfort.com/2014/09/inter-thread-communication-in-ruby/
 http://ruby-doc.org/stdlib-1.9.3/libdoc/thread/rdoc/Queue.html
+https://www.linkedin.com/pulse/20140611131459-51989130-sidekiq-performing-background-or-delayed-jobs-with-rails-on-aws-elastic-beanstalk
 
 http://stackoverflow.com/questions/8234730/global-data-in-application-controller-rails-3-1
 http://stackoverflow.com/questions/23328350/where-to-place-a-global-variable-in-rails-inside-nav
@@ -133,6 +134,10 @@ http://stackoverflow.com/questions/15270522/active-record-and-file-how-do-i-writ
 https://rubymonk.com/learning/books/1-ruby-primer/chapters/42-introduction-to-i-o/lessons/90-using-the-file-class
 http://ruby-doc.org/core-2.2.2/File.html
 http://ruby-doc.org/core-2.2.2/IO.html
+http://www.gotealeaf.com/books/ruby/read/files
+https://www.ruby-forum.com/topic/104708
+
+http://devblog.avdi.org/2014/04/28/rake-part-6-clean-and-clobber/
 
 
 

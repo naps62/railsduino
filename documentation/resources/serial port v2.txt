@@ -1,8 +1,9 @@
-class SerialController < ApplicationController
-
-  def init
-    HardWorker.perform_asnc('/dev(pts/12')
-    state_update("init")
+def init
+    data = {:state => "init"}
+    File.open("#{Rails.root}/app/assets/javascripts/data.json","w") do |f|
+      f.write(data.to_json)
+    end 
+    render json: {state: data[:state]}
   end
 
   def green_on       
@@ -42,5 +43,3 @@ class SerialController < ApplicationController
     end 
     render json: {state: data[:state]}
   end
-  
-end
