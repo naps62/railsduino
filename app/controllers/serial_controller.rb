@@ -1,7 +1,6 @@
 class SerialController < ApplicationController
-
   def init
-    HardWorker.perform_asnc('/dev(pts/12')
+    SerialWorker.perform_async('/dev(pts/12')
     state_update("init")
   end
 

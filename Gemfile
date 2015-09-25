@@ -46,4 +46,5 @@ end
 gem 'serialport'
 gem 'json'
 gem 'sidekiq'
+gem 'redis'
 gem 'pry'

@@ -1,4 +1,4 @@
-class HardWorker 
+class SerialWorker 
   include Sidekiq::Worker
   def perform(port)
     count = 0
