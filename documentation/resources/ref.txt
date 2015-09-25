@@ -117,6 +117,12 @@ http://www.sitepoint.com/comparing-ruby-background-processing-libraries-delayed-
 http://www.brownfort.com/2014/09/inter-thread-communication-in-ruby/
 http://ruby-doc.org/stdlib-1.9.3/libdoc/thread/rdoc/Queue.html
 https://github.com/mperham/sidekiq/wiki/Using-Redis
+http://redis.io/topics/introduction
+http://redis.io/topics/quickstart
+http://stackoverflow.com/questions/24149053/sidekiq-perform-async-and-order-dependent-operations
+https://github.com/mperham/sidekiq/issues/1043
+https://support.cloud.engineyard.com/hc/en-us/articles/205407368-Add-Redis-to-Your-Application
+https://reinteractive.net/posts/11-simple-strategy-for-redis-in-ruby-on-rails
 
 
 http://stackoverflow.com/questions/8234730/global-data-in-application-controller-rails-3-1
@@ -139,6 +145,8 @@ http://www.gotealeaf.com/books/ruby/read/files
 https://www.ruby-forum.com/topic/104708
 
 http://devblog.avdi.org/2014/04/28/rake-part-6-clean-and-clobber/
+
+
 
 
 
