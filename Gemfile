@@ -48,3 +48,4 @@ gem 'json'
 gem 'sidekiq'
 gem 'redis'
 gem 'pry'
+gem 'sinatra', require: nil

@@ -7,4 +7,6 @@ Rails.application.routes.draw do
  put '/yellow_off', to: 'serial#yellow_off' 
  put '/red_on', to: 'serial#red_on'
  put '/red_off', to: 'serial#red_off'  
+ require 'sidekiq/web'
+ mount Sidekiq::Web => '/sidekiq'
 end
